@@ -1,0 +1,110 @@
+@import url('reset.css');
+@import url('fonts.css');
+@import url('media.css');
+@import url('header.css');
+@import url('works.css');
+@import url('about.css');
+@import url('projects.css');
+@import url('contacts.css');
+@import url('footer.css');
+@import url('styles.css');
+
+
+
+/*body{
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #e5e5e5;
+}*/
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template: minmax(80px, auto) 1fr minmax(106px, auto) / 1fr;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+}
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/*.btn {
+  display: inline-block;
+  height: 50px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.18;
+  color: #fff;
+  background-color: #ff6e30;
+  transition: background-color 0.3s ease, outline 0.3s ease;
+}*/
+/*.btn:hover {
+  background-color: #bc572b;
+  transition: background-color 0.3s ease;
+}*/
+/*.btn:focus {
+  background-color: #ff6e30;
+  outline: 3px solid #ce4307;
+  transition: background-color 0.3s ease, outline 0.3s ease;
+}*/
+/*.btn:active {
+  background-color: #ce4307;
+  transition: background-color 0.3s ease;
+}*/
+.btn-border {
+  display: inline-block;
+  height: 50px;
+  padding: 15px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.18; /* 19px/16 */
+  color: #fff;
+  background-color: transparent;
+  border: 3px solid #ff6e30;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+.btn-border:hover {
+  background-color: #ff6e30;
+  transition: background-color 0.3s ease;
+}
+
+.btn-border:focus {
+  background-color: #bc572b;
+  border: 3px solid #ff6e30;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+.btn-border:active {
+  background-color: #ce4307;
+  border: 3px solid #ce4307;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+.subtitle {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.29; /* 31px/24 */
+  color: #202020;
+}
+.header__burger {
+  display: none;
+}
+/*img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}*/
+
+
+.main {
+  /*display: grid;*/
+  grid-area: main;
+  /*grid-template: 1fr / 1fr;*/
+
+
+}
+.main__container {
+}

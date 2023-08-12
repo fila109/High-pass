@@ -1,0 +1,31 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #e5e5e5;
+}
+
+.btn {
+  display: inline-block;
+  height: 50px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.18;
+  color: #fff;
+  background-color: #ff6e30;
+  transition: background-color 0.3s ease, outline 0.3s ease;
+}
+.btn:hover {
+  background-color: #bc572b;
+  transition: background-color 0.3s ease;
+}
+.btn:focus {
+  background-color: #ff6e30;
+  outline: 3px solid #ce4307;
+  transition: background-color 0.3s ease, outline 0.3s ease;
+}
+.btn:active {
+  background-color: #ce4307;
+  transition: background-color 0.3s ease;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,130 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  grid-area: header;
+  padding: 24px 0;
+  background-color: #202020;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+}
+.header__logo {
+  position: relative;
+  width: 190px;
+  height: 30px;
+  margin-right: 140px;
+  transition: outline 0.3s ease;
+  z-index: 100;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__logo:focus {
+  outline: 2px solid #ce4307;
+  transition: outline 0.3s ease;
+}
+.header__menu {
+  /*margin-right: 193px;*/
+}
+.header__list {
+  display: flex;
+  gap: 68px;
+}
+.header__link {
+  padding: 0px 5px 0px 5px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.header__link:hover{
+  color: #ff6e30;
+  transition: color 0.3s ease;
+}
+.header__link:focus{
+  color: #fff;
+  background-color: #bc572b;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.header__link:active{
+  background-color: transparent;
+  color: #ce4307;
+  transition: color 0.3s ease;
+}
+.header__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+.search__input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+  /*border-bottom: 1px solid #fff;*/
+  background: transparent;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #fff;
+  outline: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.header__search.active {
+  width: 210px;
+  /*opacity: 1;*/
+}
+.search__input::placeholder {
+  color: #fff;
+  width: 100%;
+  padding: 0px 5px;
+  border-bottom: 1px solid #fff;
+}
+.search__input.active {
+  opacity: 1;
+  visibility: visible;
+}
+.search {
+}
+/*.search__input {
+  display: none;
+}*/
+.search__btn {
+}
+.search__link {
+
+}
+.search__link svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+}
+.search__link:hover svg {
+  fill: #ff6e30;
+}
+.search__link:focus svg {
+  fill: #bc572b;
+}
+
+.search__cancel-btn {
+  display: none;
+}
+.search__cancel-link {
+}
+.header__burger {
+}

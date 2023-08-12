@@ -1,0 +1,141 @@
+.projects {
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+
+.projects__container {
+}
+.projects__title {
+  margin-bottom: 12px;
+}
+
+/*.projects__wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 630px);
+}*/
+.projects__items-1 {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 300px);
+}
+.projects__item {
+  position: relative;
+}
+.item-project-1 {
+  grid-column: span 2;
+  order: 1;
+}
+.item-project-2 {
+  grid-column: span 2;
+  order: 2;
+}
+.item-project-3 {
+  grid-column: span 2;
+  order: 3;
+}
+.item-project-4 {
+  grid-column: span 6;
+  order: 5;
+
+}
+.item-project-5 {
+  grid-column: span 6;
+  order: 4;
+
+}
+.item-project-6 {
+  grid-column: span 3;
+  order: 5;
+}
+.item-project-7 {
+  grid-column: span 3;
+  order: 7;
+}
+.projects__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*.projects__item-left {
+  grid-column: span 3;
+  grid-row: span 1;
+}*/
+/*.projects__item-rigth {
+  grid-column: span 2;
+  grid-row: span 1;
+}*/
+.projects__article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+.article {
+}
+.article__link {
+  right: 7px;
+  top: 7px;
+}
+.projects__article img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 18px;
+  object-fit: cover;
+}
+.item__link {
+}
+.article__text {
+  margin-bottom: 13px;
+  line-height: 1.38;
+  color: #202020;
+}
+.article__date {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.83%; /* 22px/12 */
+  color: #999;
+  background-image: url('../image/projects/icon-date.svg');
+}
+.date-icon {
+  width: 14px;
+  height: 14px;
+  fill: #999;
+}
+.projects__content {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  color: #fff;
+}
+.date-white {
+  margin-bottom: 6px;
+  color: #fff;
+}
+.icon-white {
+  fill: #fff;
+}
+.projects__subtitle {
+  margin-bottom: 5px;
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+}
+.projects__text {
+  max-width: 292px;
+  /*margin-bottom: 101px;*/
+  line-height: 1.38;
+}
+.projects__btn {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: transparent;
+  border: 3px solid #ff6e30;
+}

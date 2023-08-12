@@ -1,0 +1,111 @@
+.contacts {
+  padding-bottom: 64px;
+}
+
+.contacts__container {
+}
+.contacts__title {
+  margin-bottom: 22px;
+}
+
+.contacts__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+}
+.contacts__item-map{
+position: relative;
+grid-column: span 2;
+}
+.contacts__item-map iframe {
+  max-width: 100%;
+}
+.contacts__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 410px;
+  padding: 175px 60px 150px 60px;
+  background-color: rgba(32, 32, 32, 0.85);
+  background-image: url('../image/contacts/cancel.svg');
+  background-repeat: no-repeat;
+  background-position: 370px 20px;
+}
+.contacts__subtitle {
+  margin-bottom: 5px;
+  font-family: 'Gilroy';
+  font-size: 24px;
+  line-height: 0.91; /* 22px/24 */
+  color: #fff;
+}
+.contacts__address {
+  margin-bottom: 3px;
+  line-height: 1.75;
+  color: #cacaca;
+}
+.contacts__phone {
+  padding-left: 22px;
+  font-family: 'Gilroy';
+  line-height: 1.31; /* 21px/16 */
+  color: #ff6e30;
+  background: url('../image/contacts/tel-icon.svg') left no-repeat;
+}
+.contacts__phone:hover {
+  color: #ce4307;
+}
+.contacts__item-form {
+
+}
+.contacts__form {
+  max-width: 410px;
+}
+.form {
+  margin-top: -6px;
+}
+.form__subtitle {
+  margin-bottom: 5px;
+  font-family: 'Gilroy';
+  font-size: 24px;
+  line-height: 0.92;
+  color: #202020;
+}
+.form__text {
+  margin-bottom: 14px;
+  line-height: 1.38;
+  color: #999;
+
+}
+.form__contacts-input {
+  min-width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 15px 0px 15px 23px;
+  font-size: 16px;
+  line-height: 1.18; /* 19px/16 */
+  background: #e9e9e9;
+  color: #202020;
+  transition: border 0.3s ease, border 0.3s ease;
+}
+.form__contacts-input::placeholder {
+  font-size: 16px;
+  line-height: 1.18; /* 19px/16 */
+  color: #999;
+  transition: color 0.3s ease;
+}
+.form__contacts-input:hover::placeholder {
+  color: #ff6e30;
+  transition: color 0.3s ease;
+}
+.form__contacts-input:focus {
+  border: 1px solid #ff6e30;
+  transition: border 0.3s ease;
+}
+.form__contacts-input:active {
+  border: none;
+}
+.textarea {
+  height: 150px;
+}
+.form__button {
+}
